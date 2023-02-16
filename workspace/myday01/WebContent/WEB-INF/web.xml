@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>myday01</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet> 
+  	<servlet-name>MyServlet</servlet-name>
+  	<servlet-class>com.example.app.MyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping> 
+	<servlet-name>MyServlet</servlet-name>
+	<url-pattern>/MyServlet</url-pattern>
+  </servlet-mapping>
+  <servlet> 
+  	<servlet-name>Calc</servlet-name><!-- 서블릿 이름은 MyServlet으로 할게 -->
+  	<servlet-class>com.example.app.Calc</servlet-class> <!-- 경로는 여기고 -->
+  </servlet>
+  
+  <servlet-mapping> <!-- 그래서 그 경로를 검색해줘 -->
+	<servlet-name>Calc</servlet-name> <!-- 이름은 이거고 -->
+	<url-pattern>/Calc</url-pattern> <!-- 위치는 여기?야 -->
+  </servlet-mapping>
+  <servlet> 
+  	<servlet-name>Oper</servlet-name><!-- 서블릿 이름은 MyServlet으로 할게 -->
+  	<servlet-class>com.example.app.Oper</servlet-class> <!-- 경로는 여기고 -->
+  </servlet>
+  
+  <servlet-mapping> <!-- 그래서 그 경로를 검색해줘 -->
+	<servlet-name>Oper</servlet-name> <!-- 이름은 이거고 -->
+	<url-pattern>/Oper</url-pattern> <!-- 위치는 여기?야 -->
+  </servlet-mapping>
+  
+  <servlet> 
+  	<servlet-name>Join</servlet-name><!-- 서블릿 이름은 MyServlet으로 할게 -->
+  	<servlet-class>com.example.app.Join</servlet-class> <!-- 경로는 여기고 -->
+  </servlet>
+  
+  <servlet-mapping> <!-- 그래서 그 경로를 검색해줘 -->
+	<servlet-name>Join</servlet-name> <!-- 이름은 이거고 -->
+	<url-pattern>/Join</url-pattern> <!-- 위치는 여기?야 -->
+  </servlet-mapping>
+  
+  <servlet> 
+  	<servlet-name>ProductServlet</servlet-name><!-- 서블릿 이름은 MyServlet으로 할게 -->
+  	<servlet-class>com.example.app.ProductServlet</servlet-class> <!-- 경로는 여기고 -->
+  </servlet>
+  
+  <servlet-mapping> <!-- 그래서 그 경로를 검색해줘 -->
+	<servlet-name>ProductServlet</servlet-name> <!-- 이름은 이거고 -->
+	<url-pattern>/ProductServlet</url-pattern> <!-- 위치는 여기?야 -->
+  </servlet-mapping>
+</web-app>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
